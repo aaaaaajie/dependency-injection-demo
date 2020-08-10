@@ -9,7 +9,14 @@
 			"request": "launch",
 			"name": "test",
 			"runtimeArgs": ["-r", "ts-node/register"],
-			"args": ["${workspaceFolder}/test.ts"]
+			"args": ["${workspaceFolder}/decorator/test.ts"]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "file",
+			"runtimeArgs": ["-r", "ts-node/register"],
+			"args": ["${workspaceFolder}/file/injection1.ts"]
 		}
 	]
 }

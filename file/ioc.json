@@ -1,0 +1,32 @@
+{
+	"Roots": [
+		{
+			"id": "root",
+			"class": "Root",
+			"path": "./file/index.ts",
+			"constructorArgs": [],
+			"dependency": [
+				{
+					"id": "testService",
+					"class": "TestService",
+					"path": "./file/index.ts",
+					"constructorArgs": [],
+					"dependency": [
+						{
+							"id": "testEntity",
+							"class": "TestEntity",
+							"path": "./file/index.ts",
+							"constructorArgs": [],
+							"dependency": []
+						}
+					]
+				},
+				{
+					"id": "testService1",
+					"class": "TestService",
+					"dependency": []
+				}
+			]
+		}
+	]
+}
