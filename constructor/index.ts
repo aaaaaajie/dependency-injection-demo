@@ -1,11 +1,11 @@
-import { Injectable, classFactory } from "./ioc"
+import { Injectable, classFactory } from "./ioc";
 
 @Injectable()
 class C {
     constructor() { }
 
     sayHello() {
-        console.log("hello")
+        console.log("hello");
     }
 }
 
@@ -23,9 +23,13 @@ class B {
 @Injectable()
 class A {
     constructor(private b: B) {
-        b.sayHello();
+    }
+    sayHello() {
+        this.b.sayHello();
     }
 }
 
 //产生实例
 let a: A = classFactory(A);
+a.sayHello();
+console.log(a);

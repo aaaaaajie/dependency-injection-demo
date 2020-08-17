@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- services -->
+
+    <!-- petStoreServiceImpl 使用该对象空参构造初始化-->
+    <bean id="petStoreServiceImpl" class="com.huoshiije.springframework.ioc.xml.service.impl.PetStoreServiceImpl">
+        <!-- 注入`accountDao`和`accountDao`-->
+        <property name="accountDao" ref="accountDaoImpl"/>
+        <property name="itemDao" ref="itemDaoImpl"/>
+    </bean>
+</beans>

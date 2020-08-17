@@ -17,6 +17,13 @@
       "name": "file",
       "runtimeArgs": ["-r", "ts-node/register"],
       "args": ["${workspaceFolder}/file/index.ts"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "constructor",
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "args": ["${workspaceFolder}/constructor/index.ts"]
     }
   ]
 }

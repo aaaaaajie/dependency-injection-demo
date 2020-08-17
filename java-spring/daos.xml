@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- daos -->
+
+    <!-- accountDaoImpl 使用该对象的String构造初始化 -->
+    <bean id="accountDaoImpl" class="com.duanjw.springframework.ioc.xml.dao.impl.AccountDaoImpl">
+        <constructor-arg name="name" value="张三"></constructor-arg>
+    </bean>
+
+    <!-- itemDaoImpl 使用该对象空参构造初始化 -->
+    <bean id="itemDaoImpl" class="com.duanjw.springframework.ioc.xml.dao.impl.ItemDaoImpl" scope="prototype"/>
+</beans>

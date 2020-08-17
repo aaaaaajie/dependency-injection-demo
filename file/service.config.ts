@@ -7,11 +7,11 @@ export default [
         path: resolve("./file/index.ts"),
         constructorArgs: [],
         dependency: Dependency
+    },
+    {
+        id: "testService1",
+        className: "TestService",
+        path: resolve("./file/index.ts"),
+        dependency: Dependency
     }
-    // {
-    //     id: "testService1",
-    //     className: "TestService",
-    //     path: resolve("./file/index.ts"),
-    //     dependency: Dependency
-    // }
 ];
